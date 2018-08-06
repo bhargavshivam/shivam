@@ -51,6 +51,7 @@ public class MockTest1 {
     public void whenValidId_thenOrderShouldBeFound() {
         String name = "order1";
         Order order = orderService.getByIdOrder(1);
+        
         Assert.assertEquals(name,order.getName());
      }
     
