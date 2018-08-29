@@ -63,6 +63,7 @@ public class OrderController {
 	@RequestMapping(value="/all" ,method=RequestMethod.GET)
 	public ResponseEntity<List<Order>> getOrders() {
 		List<Order> orders=orderService.getOrders();
+		System.out.println("in get all orders");
 		ResponseEntity<List<Order>> re=new ResponseEntity<List<Order>>(orders,HttpStatus.OK);
 		return re;
 	}
